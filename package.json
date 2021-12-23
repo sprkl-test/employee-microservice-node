@@ -4,6 +4,7 @@
   "description": "An example Node.js microservices",
   "main": "index.js",
   "scripts": {
+    "prestart": "gitelemetry apply -a 1000",
     "start": "node index.js",
     "dev": "NODE_ENV=development nodemon .",
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register './test/setup.js' './app/**/*-spec.js'",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/omerio/employee-microservice-node#readme",
   "dependencies": {
+    "@sprkl/gitelemetry": "file:gitelemetry",
     "boom": "^4.2.0",
     "good": "^7.1.0",
     "good-console": "^6.4.0",
