@@ -16,6 +16,3 @@ COPY . .
 
 ENV PORT 8000
 EXPOSE 8000
-
-# Silent start because we want to have our log format as the first log
-CMD ["npm", "start"]
