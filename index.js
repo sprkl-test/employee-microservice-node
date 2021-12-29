@@ -1,4 +1,4 @@
-require('@sprkl/gitelemetry').init('employee-microservice-node')
+require('@sprkl/sprkl').init('employee-microservice-node')
 const hapi = require('hapi')
 const swagger = require('hapi-swagger')
 const inert = require('inert')
