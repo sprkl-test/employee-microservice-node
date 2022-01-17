@@ -1,4 +1,4 @@
-require('sprkl').init('employee-microservice-node')
+require('sprkl')({ serviceName: 'employee-microservice-node', agent: {host: process.env.OTEL_COLLECTOR}})
 const hapi = require('hapi')
 const swagger = require('hapi-swagger')
 const inert = require('inert')
