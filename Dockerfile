@@ -9,7 +9,7 @@ COPY package-lock.json package-lock.json
 
 RUN npm install --production --quiet
 
-RUN npm link sprkl
+RUN npm link @sprkl/sprkl
 
 # Add source files
 COPY . .
