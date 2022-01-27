@@ -4,7 +4,6 @@
   "description": "An example Node.js microservices",
   "main": "index.js",
   "scripts": {
-    "prestart": "sprkl apply -a 1000",
     "start": "node index.js",
     "dev": "NODE_ENV=development nodemon .",
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register './test/setup.js' './app/**/*-spec.js'",
