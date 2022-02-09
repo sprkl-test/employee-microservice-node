@@ -4,7 +4,7 @@
   "description": "An example Node.js microservices",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "sprkl --name=employee-microservice-node --no-apply -- node index.js",
     "dev": "NODE_ENV=development nodemon .",
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register './test/setup.js' './app/**/*-spec.js'",
     "test-ci": "NODE_ENV=test mocha --compilers js:babel-core/register './test/setup.js' './app/**/*-spec.js' --reporter mocha-junit-reporter --reporter-options mochaFile=./coverage/test-results.xml",
